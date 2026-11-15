@@ -24,6 +24,8 @@
 .
 ├─ docs/                 # 设计文档与调研
 │  ├─ 游戏方向方案与排期.md
+│  ├─ 接口文档.md
+│  ├─ 提交与协作说明.md
 │  └─ 开源模型渲染方案.md
 ├─ src/
 │  ├─ main.js            # 入口
@@ -38,6 +40,7 @@
 ├─ tests/                # Playwright 回归
 ├─ tools/                # 构建与资源脚本
 ├─ index.html
+├─ CONTRIBUTING.md
 └─ package.json
 ```
 
@@ -54,6 +57,8 @@ npm run watch     # 开发时监听
 ## 文档
 
 - [游戏方向方案与排期](docs/游戏方向方案与排期.md)
+- [接口文档](docs/接口文档.md)
+- [提交与协作说明](docs/提交与协作说明.md)
 - [开源模型渲染方案](docs/开源模型渲染方案.md)
 
 ## 资产与许可
