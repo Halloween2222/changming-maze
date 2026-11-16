@@ -36,6 +36,12 @@
       max-width: 560px;
       padding: 0 24px;
       text-align: center;
+      pointer-events: none;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+    body[data-ready="true"] .placeholder {
+      opacity: 0;
+      visibility: hidden;
     }
     .placeholder h1 {
       margin: 0 0 12px;
@@ -57,8 +63,11 @@
   <canvas id="scene" aria-label="长明：雾海迷宫场景"></canvas>
   <div class="placeholder">
     <h1>长明</h1>
-    <p>雾海迷宫 · 仓库初始化中<br>WebGL2 / three.js · 计算机图形学综合实验四</p>
+    <p>雾海迷宫 · 引擎骨架运行中<br>WebGL2 / three.js · 计算机图形学综合实验四</p>
   </div>
-  <script src="./src/main.js"></script>
+  <script
+    src="./dist/bundle.js"
+    onerror="document.querySelector('.placeholder p').textContent = '未找到 dist/bundle.js，请先运行 npm install 和 npm run build'"
+  ></script>
 </body>
 </html>
