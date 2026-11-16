@@ -6,12 +6,14 @@
   "description": "《长明：雾海迷宫》——基于 WebGL2 / three.js 的第一人称 3D 迷宫（计算机图形学综合实验四）",
   "scripts": {
     "build": "esbuild src/main.js --bundle --format=iife --outfile=dist/bundle.js",
-    "watch": "esbuild src/main.js --bundle --format=iife --outfile=dist/bundle.js --watch"
+    "watch": "esbuild src/main.js --bundle --format=iife --outfile=dist/bundle.js --watch",
+    "test": "node tests/smoke.cjs"
   },
   "dependencies": {
     "three": "^0.187.0"
   },
   "devDependencies": {
-    "esbuild": "^0.28.2"
+    "esbuild": "^0.28.2",
+    "playwright-core": "^1.65.1"
   }
 }

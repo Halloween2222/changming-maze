@@ -6,7 +6,16 @@
 
 ## 项目状态
 
-仓库初始化完成，目录结构已建立；可运行版本与图形学特性将在后续提交中逐步接入。
+引擎骨架已接入（11.16–11.20 的无阻塞部分）：
+
+- three.js + esbuild IIFE，`npm run build` 产出 `dist/bundle.js`；
+- WebGL2 渲染循环、resize/DPR、性能统计；
+- 输入抽象（Pointer Lock + 拖动回退）、调试相机；
+- `window.changming` 诊断接口；
+- Playwright 冒烟测试；
+- 临时调试场景（石柱/月光/灯笼点光/阴影），后续替换为迷宫与灯塔。
+
+迷宫、玩家控制器、交互、HUD、正式光照/水面与音频仍在各自模块开发中。
 
 ## 团队
 
@@ -51,9 +60,12 @@
 npm install
 npm run build     # esbuild 打包到 dist/bundle.js
 npm run watch     # 开发时监听
+npm test          # Playwright 冒烟测试（先 build）
 ```
 
-当前为骨架版本，`src/main.js` 只有入口占位；后续会接入 three.js 场景与迷宫模块。
+构建后双击 `index.html` 即可运行（`file://`，不需要本地服务器）。
+
+当前为引擎骨架版本；`src/main.js` 已接入 `engine/` 的渲染循环、输入、调试相机和诊断，迷宫/玩法模块仍待接入。
 
 ## 文档
 
