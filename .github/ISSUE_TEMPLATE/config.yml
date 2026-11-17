@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 提交与协作说明
+    url: https://github.com/echo14670/changming-maze/blob/main/docs/提交与协作说明.md
+    about: 分支模型、PR 流程、提交规范、周集成
+  - name: 接口文档
+    url: https://github.com/echo14670/changming-maze/blob/main/docs/接口文档.md
+    about: 模块边界、核心接口、诊断 API
