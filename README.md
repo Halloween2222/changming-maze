@@ -69,6 +69,7 @@ npm test          # Playwright 冒烟测试（先 build）
 
 ## 文档
 
+- [参与开发 / 提交规范](CONTRIBUTING.md)
 - [游戏方向方案与排期](docs/游戏方向方案与排期.md)
 - [第一周任务](docs/第一周任务.md)
 - [接口文档](docs/接口文档.md)
